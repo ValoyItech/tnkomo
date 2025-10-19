@@ -116,6 +116,11 @@
   <script src="/_sdk/element_sdk.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome 6.6.0 (Full) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-K4oODpHQwLgLdSpuh9NvSkDqGVx4O+HFXVDaQjAGKXArF5ZBz5vbj+acHtnWRzYbGQZxgXBgqY8STFvhnYliYQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
 
@@ -279,16 +284,62 @@ html, body {
       </svg></button>
     </div>
    </div><!-- Mobile Menu -->
-   <div id="mobile-menu" class="mobile-menu md:hidden fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50">
-    <div class="p-6">
-     <div class="flex justify-between items-center mb-8"><span class="text-xl font-bold text-gray-800">Menu</span> <button id="close-mobile-menu" class="text-gray-700 hover:text-blue-600">
-       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-       </svg></button>
-     </div>
-     <div class="space-y-4"><a href="#home" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Home</a> <a href="about.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">About</a> <a href="services.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Services</a> <a href="contact.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
-     </div>
+   <!-- ===== MOBILE MENU (with logo + social icons, same script) ===== -->
+<div id="mobile-menu" class="mobile-menu md:hidden fixed inset-y-0 left-0 w-64 bg-[#1e3a8a] text-white shadow-2xl z-50">
+  <div class="p-6 flex flex-col h-full">
+    
+    <!-- Logo & Close Button -->
+    <div class="flex justify-between items-center mb-8">
+      <div class="flex items-center space-x-3">
+    <img src="images/logo.png" alt="T NKOMO Attorneys Logo" class="w-10 h-10 rounded-lg shadow-md">
+    <span class="text-xl font-bold tracking-wide">Menu</span>
+</div>
+
+      <button id="close-mobile-menu" class="text-gray-200 hover:text-orange-400 transition-transform duration-200 hover:rotate-90">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
-   </div>
+
+    <!-- Navigation Links -->
+    <div class="space-y-4 flex-grow">
+      <a href="#home" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">Home</a>
+      <a href="about.html" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">About</a>
+      <a href="services.html" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">Services</a>
+      <a href="contact.html" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">Contact</a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="pt-6 border-t border-white/20">
+      <!-- social links block -->
+<div class="flex justify-center space-x-6 text-xl mt-4">
+  <a href="https://wa.me/27785673301" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://facebook.com" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://instagram.com" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://tiktok.com" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div>
+      <p class="text-sm text-gray-300 mt-6 text-center">© 2025 T NKOMO Attorneys Inc</p>
+    </div>
+  </div>
+</div>
+
   </nav><!-- Hero Section - Full HD -->
   <header class="relative w-full h-screen overflow-hidden mt-16"><!-- Logo and Title Overlay -->
    
@@ -454,7 +505,58 @@ html, body {
       </div>
      </div>
     </div>
-   </section><!-- Contact Section -->
+   </section>
+
+
+<!-- ===== WHY CHOOSE US SECTION ===== -->
+<section class="py-16 bg-[#1e3a8a] text-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 uppercase tracking-wide">
+      Why Choose <span class="text-orange-400">Us</span>
+    </h2>
+
+    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed">
+      At <strong>T NKOMO Attorneys Inc</strong>, we pride ourselves on professionalism, integrity, and dedication to achieving the best possible results for our clients.
+      Led by <strong>Director Thabang Nkomo</strong>, our team brings legal excellence and genuine client care together in every case we handle.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8 text-left">
+      <div class="bg-white bg-opacity-10 p-8 rounded-2xl shadow-lg hover:bg-opacity-20 transition duration-300">
+        <div class="text-orange-400 text-4xl mb-4">
+          <i class="fas fa-balance-scale"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Proven Legal Expertise</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Years of experience in civil & criminal litigation, property law, and RAF claims — giving you confidence your case is in capable hands.
+        </p>
+      </div>
+
+      <div class="bg-white bg-opacity-10 p-8 rounded-2xl shadow-lg hover:bg-opacity-20 transition duration-300">
+        <div class="text-orange-400 text-4xl mb-4">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Client-Focused Service</h3>
+        <p class="text-gray-200 leading-relaxed">
+          We treat every client with respect, transparency, and commitment — ensuring you fully understand your rights and options at each step.
+        </p>
+      </div>
+
+      <div class="bg-white bg-opacity-10 p-8 rounded-2xl shadow-lg hover:bg-opacity-20 transition duration-300">
+        <div class="text-orange-400 text-4xl mb-4">
+          <i class="fas fa-gavel"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Results-Driven Approach</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Our team works tirelessly to deliver effective, timely outcomes — combining sharp legal insight with a passion for justice.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
    <section class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up">
     <h2 id="contact-title" class="text-3xl font-bold text-gray-800 text-center mb-8" data-aos="fade-up">Contact Us</h2><!-- Contact Info -->
     <div class="grid md:grid-cols-3 gap-8 mb-12">
@@ -634,16 +736,20 @@ html, body {
         // Auto-advance slider
         setInterval(nextSlide, 5000);
 
-        // Mobile menu functionality
         function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('active');
-        }
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenu.classList.toggle('active');
 
-        function closeMobileMenu() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.remove('active');
-        }
+  /* tell FA to look again */
+  if (window.FontAwesome) window.FontAwesome.dom.i2svg();
+}
+
+function closeMobileMenu() {
+  document.getElementById('mobile-menu').classList.remove('active');
+
+  /* same here if you want to be safe */
+  if (window.FontAwesome) window.FontAwesome.dom.i2svg();
+}
 
         // Event listeners
         document.addEventListener('DOMContentLoaded', function() {

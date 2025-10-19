@@ -221,16 +221,62 @@ html, body {
       </svg></button>
     </div>
    </div><!-- Mobile Menu -->
-   <div id="mobile-menu" class="mobile-menu md:hidden fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50">
-    <div class="p-6">
-     <div class="flex justify-between items-center mb-8"><span class="text-xl font-bold text-gray-800">Menu</span> <button id="close-mobile-menu" class="text-gray-700 hover:text-blue-600">
-       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-       </svg></button>
-     </div>
-     <div class="space-y-4"><a href="index.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Home</a> <a href="about.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">About</a> <a href="services.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Services</a> <a href="#contact" class="block text-blue-600 font-medium py-2">Contact</a>
-     </div>
+   
+<div id="mobile-menu" class="mobile-menu md:hidden fixed inset-y-0 left-0 w-64 bg-[#1e3a8a] text-white shadow-2xl z-50">
+  <div class="p-6 flex flex-col h-full">
+    
+    <!-- Logo & Close Button -->
+    <div class="flex justify-between items-center mb-8">
+      <div class="flex items-center space-x-3">
+    <img src="images/logo.png" alt="T NKOMO Attorneys Logo" class="w-10 h-10 rounded-lg shadow-md">
+    <span class="text-xl font-bold tracking-wide">Menu</span>
+</div>
+
+      <button id="close-mobile-menu" class="text-gray-200 hover:text-orange-400 transition-transform duration-200 hover:rotate-90">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
-   </div>
+
+    <!-- Navigation Links -->
+    <div class="space-y-4 flex-grow">
+      <a href="#home" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">Home</a>
+      <a href="about.html" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">About</a>
+      <a href="services.html" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">Services</a>
+      <a href="contact.html" class="block text-white hover:bg-orange-500 hover:text-white font-medium py-2 px-3 rounded-lg transition duration-200">Contact</a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="pt-6 border-t border-white/20">
+      <!-- social links block -->
+<div class="flex justify-center space-x-6 text-xl mt-4">
+  <a href="https://wa.me/27785673301" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://facebook.com" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://instagram.com" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://tiktok.com" target="_blank"
+     class="text-white hover:text-orange-400 transition">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div>
+      <p class="text-sm text-gray-300 mt-6 text-center">© 2025 T NKOMO Attorneys Inc</p>
+    </div>
+  </div>
+</div>
+
   </nav><!-- Breadcrumb -->
   <section class="breadcrumb mt-16 py-8">
    <div class="max-w-6xl mx-auto px-6">
