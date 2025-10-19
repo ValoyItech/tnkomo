@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <!-- ===== META TAGS: About Page ===== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | T NKOMO Attorneys Inc — Led by Thabang Nkomo</title>
+<meta name="description" content="Learn more about T NKOMO Attorneys Inc, founded by Director Thabang Nkomo. Discover our values, vision, and commitment to professional legal excellence in East London, Eastern Cape.">
+<meta name="keywords" content="About T NKOMO Attorneys, Thabang Nkomo, Law Firm East London, Attorneys Eastern Cape, Legal Expertise, Professional Conduct">
+<meta name="author" content="Thabang Nkomo">
+<link rel="canonical" href="https://nkomoinc.co.za/about.html">
+<meta name="robots" content="index, follow">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+<link rel="shortcut icon" href="images/logo.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="About T NKOMO Attorneys Inc — Led by Thabang Nkomo">
+<meta property="og:description" content="Discover the story and professional values behind T NKOMO Attorneys Inc, directed by Thabang Nkomo.">
+<meta property="og:image" content="images/logo.png">
+<meta property="og:url" content="https://nkomoinc.co.za/about.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="T NKOMO Attorneys Inc">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About T NKOMO Attorneys Inc — Led by Thabang Nkomo">
+<meta name="twitter:description" content="Learn more about T NKOMO Attorneys Inc, founded by Director Thabang Nkomo.">
+<meta name="twitter:image" content="images/logo.png">
+
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+
+     /* kill horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+        body {
+            box-sizing: border-box;
+        }
+        
+        .logo-text {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background-color: #0891b2;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        .value-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .value-card:hover::before {
+            left: 100%;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .team-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-card .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .team-card:hover .overlay {
+            transform: translateY(0);
+        }
+        
+        .stats-counter {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+        
+        .breadcrumb {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .timeline {
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #1e3a8a, #0891b2);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 2rem;
+            width: 16px;
+            height: 16px;
+            background: #1e3a8a;
+            border: 4px solid white;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 0 4px #1e3a8a;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin: 0 2rem;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 50%;
+            margin-right: 2rem;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: 50%;
+            margin-left: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 2rem;
+            }
+            
+            .timeline-item::before {
+                left: 2rem;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-content,
+            .timeline-item:nth-child(odd) .timeline-content {
+                margin-left: 4rem;
+                margin-right: 1rem;
+            }
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        }
+        
+        .expertise-badge {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .expertise-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 58, 138, 0.3);
+        }
+        
+        .parallax-section {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(30, 58, 138, 0.8);
+        }
+        
+        .icon-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="min-h-full bg-gray-50"><!-- Navigation -->
+  <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+   <div class="max-w-6xl mx-auto px-6">
+    <div class="flex justify-between items-center py-3">
+     <div class="flex items-center space-x-3"><img src="images/logo.png" alt="T NKOMO Logo" class="w-12 h-12 rounded-lg" onerror="this.src=''; this.alt='Logo placeholder'; this.style.display='none';"> <span id="firm-name" class="text-xl font-bold text-gray-800">T NKOMO Attorneys</span>
+     </div><!-- Desktop Menu -->
+     <div class="hidden md:flex space-x-8"><a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Home</a> <a href="#about" class="nav-link text-blue-600 font-medium">About</a> <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Services</a> <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+     </div><!-- Mobile Menu Button --> <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-blue-600">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg></button>
+    </div>
+   </div><!-- Mobile Menu -->
+   <div id="mobile-menu" class="mobile-menu md:hidden fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50">
+    <div class="p-6">
+     <div class="flex justify-between items-center mb-8"><span class="text-xl font-bold text-gray-800">Menu</span> <button id="close-mobile-menu" class="text-gray-700 hover:text-blue-600">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+       </svg></button>
+     </div>
+     <div class="space-y-4"><a href="index.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Home</a> <a href="#about" class="block text-blue-600 font-medium py-2">About</a> <a href="services.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Services</a> <a href="contact.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+     </div>
+    </div>
+   </div>
+  </nav><!-- Breadcrumb -->
+  <section class="breadcrumb mt-16 py-8">
+   <div class="max-w-6xl mx-auto px-6">
+    <nav class="flex items-center space-x-2 text-sm"><a href="index.html" class="text-blue-600 hover:text-blue-800 transition-colors">Home</a>
+     <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+     </svg><span class="text-gray-600">About Us</span>
+    </nav>
+   </div>
+  </section><!-- Hero Section -->
+  <section class="gradient-bg text-white py-20">
+   <div class="max-w-6xl mx-auto px-6 text-center">
+    <h1 id="about-title" class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">About T NKOMO Attorneys</h1>
+    <p id="about-subtitle" class="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">Dedicated legal professionals committed to delivering exceptional service, integrity, and results for our clients across the Eastern Cape region.</p>
+    <div class="mt-12" data-aos="fade-up" data-aos-delay="400">
+     <div class="icon-bounce inline-block">
+      <svg class="w-12 h-12 text-blue-200" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+     </div>
+    </div>
+   </div>
+  </section>
+  <main class="max-w-6xl mx-auto px-6 py-16"><!-- Our Story Section -->
+   <section class="mb-20" data-aos="fade-up">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+     <div>
+      <h2 id="story-title" class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
+      <p id="story-description" class="text-lg text-gray-600 leading-relaxed mb-8">T NKOMO Attorneys Inc is a newly established legal practice founded with a passion for providing accessible, professional legal services to the Eastern Cape community. As a solo practitioner just getting started, I am committed to building lasting relationships with clients through personalized attention, dedication, and unwavering integrity.</p>
+      <div class="grid grid-cols-2 gap-6 mb-8">
+       <div class="text-center">
+        <div class="stats-counter" data-target="2024">
+         2024
+        </div>
+        <p class="text-gray-600 font-semibold">Year Founded</p>
+       </div>
+       <div class="text-center">
+        <div class="stats-counter" data-target="1">
+         1
+        </div>
+        <p class="text-gray-600 font-semibold">Dedicated Attorney</p>
+       </div>
+       <div class="text-center">
+        <div class="stats-counter" data-target="100">
+         100
+        </div>
+        <p class="text-gray-600 font-semibold">Commitment %</p>
+       </div>
+       <div class="text-center">
+        <div class="stats-counter" data-target="24">
+         24
+        </div>
+        <p class="text-gray-600 font-semibold">Hour Support</p>
+       </div>
+      </div>
+      <div class="flex flex-wrap gap-2"><span class="expertise-badge">Contract Law</span> <span class="expertise-badge">Property Law</span> <span class="expertise-badge">Litigation</span> <span class="expertise-badge">RAF Claims</span> <span class="expertise-badge">Immigration</span>
+      </div>
+     </div>
+     <div class="relative">
+      <div class="bg-gradient-to-br from-blue-600 to-teal-500 rounded-2xl p-8 text-white shadow-2xl">
+       <svg class="w-16 h-16 mb-6 text-blue-200" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+       </svg>
+       <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+       <p class="text-blue-100 leading-relaxed">To provide exceptional legal services with integrity, professionalism, and dedication, ensuring our clients receive the best possible outcomes while maintaining the highest ethical standards.</p>
+      </div><!-- Decorative elements -->
+      <div class="absolute -top-4 -right-4 w-24 h-24 bg-blue-200 rounded-full opacity-20"></div>
+      <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-teal-200 rounded-full opacity-20"></div>
+     </div>
+    </div>
+   </section><!-- Timeline Section -->
+   <section class="mb-20" data-aos="fade-up">
+    <div class="text-center mb-16">
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Journey</h2>
+     <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">A timeline of growth, achievement, and commitment to legal excellence.</p>
+    </div>
+    <div class="timeline">
+     <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-content">
+       <h3 class="text-xl font-bold text-gray-800 mb-2">2024 - Foundation</h3>
+       <p class="text-gray-600">T NKOMO Attorneys Inc was established with a vision to provide accessible, personalized legal services to the Eastern Cape community.</p>
+      </div>
+     </div>
+     <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-content">
+       <h3 class="text-xl font-bold text-gray-800 mb-2">2024 - Building Relationships</h3>
+       <p class="text-gray-600">Focused on establishing strong client relationships and building a reputation for integrity and dedication in legal service.</p>
+      </div>
+     </div>
+     <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-content">
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Future - Growth Vision</h3>
+       <p class="text-gray-600">Committed to growing the practice while maintaining personalized service and becoming a trusted legal partner in the community.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Values Section -->
+   <section class="mb-20" data-aos="fade-up">
+    <div class="text-center mb-16">
+     <h2 id="values-title" class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Core Values</h2>
+     <p id="values-subtitle" class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">The principles that guide our practice and define our commitment to excellence in legal service.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="value-card bg-white rounded-xl shadow-lg p-8 text-center border-l-4 border-blue-600" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+       <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Integrity</h3>
+      <p class="text-gray-600 leading-relaxed">We uphold the highest ethical standards in all our dealings, ensuring transparency and honesty in every client interaction.</p>
+     </div>
+     <div class="value-card bg-white rounded-xl shadow-lg p-8 text-center border-l-4 border-teal-500" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-teal-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+       <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Excellence</h3>
+      <p class="text-gray-600 leading-relaxed">We strive for excellence in every case, continuously improving our skills and knowledge to deliver superior legal services.</p>
+     </div>
+     <div class="value-card bg-white rounded-xl shadow-lg p-8 text-center border-l-4 border-blue-600" data-aos="fade-up" data-aos-delay="300">
+      <div class="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+       <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Client Focus</h3>
+      <p class="text-gray-600 leading-relaxed">Our clients are at the center of everything we do. We listen, understand, and tailor our approach to meet their unique needs.</p>
+     </div>
+     <div class="value-card bg-white rounded-xl shadow-lg p-8 text-center border-l-4 border-teal-500" data-aos="fade-up" data-aos-delay="400">
+      <div class="bg-teal-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+       <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Accessibility</h3>
+      <p class="text-gray-600 leading-relaxed">We believe quality legal services should be accessible to all, offering flexible payment options and clear communication.</p>
+     </div>
+     <div class="value-card bg-white rounded-xl shadow-lg p-8 text-center border-l-4 border-blue-600" data-aos="fade-up" data-aos-delay="500">
+      <div class="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+       <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Innovation</h3>
+      <p class="text-gray-600 leading-relaxed">We embrace modern technology and innovative approaches to enhance our service delivery and client experience.</p>
+     </div>
+     <div class="value-card bg-white rounded-xl shadow-lg p-8 text-center border-l-4 border-teal-500" data-aos="fade-up" data-aos-delay="600">
+      <div class="bg-teal-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+       <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
+       </svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Community</h3>
+      <p class="text-gray-600 leading-relaxed">We are committed to giving back to our community and supporting local initiatives that make a positive difference.</p>
+     </div>
+    </div>
+   </section><!-- Team Section -->
+   
+   
+   
+   <section class="mb-20" data-aos="fade-up">
+  <div class="text-center mb-16">
+    <h2 id="team-title" class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Meet the Attorney</h2>
+    <p id="team-subtitle" class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      A dedicated legal professional committed to providing personalized service and achieving the best outcomes for every client.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+    <!-- Attorney Image -->
+    <div class="flex-shrink-0">
+      <img src="images/her.jpg" alt="Attorney Portrait" class="rounded-xl shadow-lg w-80 h-auto object-cover">
+    </div>
+
+    <!-- Attorney Bio -->
+    <div class="team-card bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">T. Nkomo</h3>
+      <p class="text-blue-600 font-semibold mb-4 text-lg">Principal Attorney</p>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        As the founder and principal attorney of T NKOMO Attorneys Inc, I am passionate about providing accessible, high-quality legal services to the Eastern Cape community. My commitment is to offer personalized attention to each client, ensuring their legal needs are met with integrity, professionalism, and dedication.
+      </p>
+
+      <!-- Practice Areas Section -->
+      <div class="mb-6">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Practice Areas</h4>
+        <div class="grid grid-cols-2 gap-2 text-sm text-gray-600">
+          <div>• Contract Law</div>
+          <div>• Property Law</div>
+          <div>• Civil Litigation</div>
+          <div>• RAF Claims</div>
+          <div>• Immigration Law</div>
+          <div>• Family Law</div>
+          <div>• Criminal Defense</div>
+          <div>• Business Law</div>
+        </div>
+      </div>
+
+      <div class="flex justify-center space-x-4">
+        <div class="text-center">
+          <div class="text-2xl font-bold text-blue-600">2024</div>
+          <div class="text-sm text-gray-600">Practice Founded</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-blue-600">8+</div>
+          <div class="text-sm text-gray-600">Practice Areas</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-blue-600">100%</div>
+          <div class="text-sm text-gray-600">Dedicated</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+   
+   
+   <!-- Call to Action -->
+   <section class="parallax-section py-20 relative" data-aos="fade-up">
+    <div class="parallax-overlay"></div>
+    <div class="relative z-10 text-center text-white">
+     <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
+     <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">Experience the difference that dedicated, professional legal representation can make. Contact us today for a consultation.</p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all transform hover:scale-105"> Get In Touch </a> <a href="tel:0785673301" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all"> Call Now: 078 567 3301 </a>
+     </div>
+    </div>
+   </section>
+  </main>
+
+
+  <footer class="gradient-bg text-white py-12 mt-16" data-aos="fade-up">
+   <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 mb-8"><!-- Company Info -->
+     <div class="md:col-span-2">
+      <div class="flex items-center space-x-3 mb-4"><img src="images/logo.png" alt="T NKOMO Logo" class="w-12 h-12 rounded-lg" onerror="this.src=''; this.alt='Logo placeholder'; this.style.display='none';"> <span class="text-2xl font-bold">T NKOMO Attorneys Inc</span>
+      </div>
+      <p class="text-blue-100 mb-4 leading-relaxed">Professional legal services with integrity, expertise, and dedication to our clients' success. Serving East London and the Eastern Cape region with comprehensive legal solutions.</p>
+            <div class="flex space-x-4"><!-- WhatsApp --> <a href="https://wa.me/27785673301" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-white transition-colors">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516" />
+        </svg></a> <!-- Facebook --> <a href="#" class="text-blue-200 hover:text-white transition-colors">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg></a> <!-- TikTok --> <a href="#" class="text-blue-200 hover:text-white transition-colors">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+        </svg></a> <!-- Instagram --> <a href="#" class="text-blue-200 hover:text-white transition-colors">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg></a>
+      </div>
+     </div><!-- Quick Links -->
+     <div>
+      <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+       <li><a href="index.html" class="text-blue-200 hover:text-white transition-colors">Home</a></li>
+       <li><a href="about.html" class="text-blue-200 hover:text-white transition-colors">About Us</a></li>
+       <li><a href="services.html" class="text-blue-200 hover:text-white transition-colors">Our Services</a></li>
+       <li><a href="contact.html" class="text-blue-200 hover:text-white transition-colors">Contact</a></li>
+      </ul>
+     </div><!-- Legal Services -->
+     <div>
+      <h3 class="text-lg font-semibold mb-4">Legal Services</h3>
+      <ul class="space-y-2">
+       <li><a href="services.html#contracts" class="text-blue-200 hover:text-white transition-colors">Contract Drafting</a></li>
+       <li><a href="services.html#property" class="text-blue-200 hover:text-white transition-colors">Property Law</a></li>
+       <li><a href="services.html#litigation" class="text-blue-200 hover:text-white transition-colors">Litigation</a></li>
+       <li><a href="services.html#raf" class="text-blue-200 hover:text-white transition-colors">Road Accident Fund</a></li>
+       <li><a href="services.html#immigration" class="text-blue-200 hover:text-white transition-colors">Immigration Law</a></li>
+      </ul>
+     </div>
+    </div><!-- Bottom Bar -->
+    <div class="border-t border-blue-400 pt-8 flex flex-col md:flex-row justify-between items-center">
+     <p class="text-blue-100 text-sm mb-4 md:mb-0">© 2024 T NKOMO Attorneys Inc. All rights reserved.</p>
+     <div class="flex space-x-6 text-sm"><a href="#" class="text-blue-200 hover:text-white transition-colors">Privacy Policy</a> <a href="#" class="text-blue-200 hover:text-white transition-colors">Terms of Service</a> <a href="#" class="text-blue-200 hover:text-white transition-colors">Legal Notice</a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+        const defaultConfig = {
+            firm_name: "T NKOMO Attorneys",
+            about_title: "About T NKOMO Attorneys",
+            about_subtitle: "A dedicated legal professional committed to delivering exceptional service, integrity, and results for clients across the Eastern Cape region.",
+            story_title: "My Story",
+            story_description: "T NKOMO Attorneys Inc is a newly established legal practice founded with a passion for providing accessible, professional legal services to the Eastern Cape community. As a solo practitioner just getting started, I am committed to building lasting relationships with clients through personalized attention, dedication, and unwavering integrity.",
+            values_title: "My Core Values",
+            values_subtitle: "The principles that guide my practice and define my commitment to excellence in legal service.",
+            team_title: "Meet the Attorney",
+            team_subtitle: "A dedicated legal professional committed to providing personalized service and achieving the best outcomes for every client.",
+            primary_color: "#1e3a8a",
+            secondary_color: "#0891b2",
+            font_family: "system-ui",
+            font_size: 16
+        };
+
+        // Mobile menu functionality
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stats-counter');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.ceil(current);
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                
+                updateCounter();
+            });
+        }
+
+        // Intersection Observer for counter animation
+        function setupCounterObserver() {
+            const counterSection = document.querySelector('.stats-counter').closest('section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            observer.observe(counterSection);
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+            
+            // Mobile menu functionality
+            document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+            document.getElementById('close-mobile-menu').addEventListener('click', closeMobileMenu);
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuBtn = document.getElementById('mobile-menu-btn');
+                
+                if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                    closeMobileMenu();
+                }
+            });
+
+            // Setup counter animation
+            setupCounterObserver();
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        async function render(config) {
+            const primaryColor = config.primary_color || defaultConfig.primary_color;
+            const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
+            const customFont = config.font_family || defaultConfig.font_family;
+            const baseSize = config.font_size || defaultConfig.font_size;
+            const baseFontStack = 'system-ui, -apple-system, sans-serif';
+
+            // Update text content
+            document.getElementById('firm-name').textContent = config.firm_name || defaultConfig.firm_name;
+            document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
+            document.getElementById('about-subtitle').textContent = config.about_subtitle || defaultConfig.about_subtitle;
+            document.getElementById('story-title').textContent = config.story_title || defaultConfig.story_title;
+            document.getElementById('story-description').textContent = config.story_description || defaultConfig.story_description;
+            document.getElementById('values-title').textContent = config.values_title || defaultConfig.values_title;
+            document.getElementById('values-subtitle').textContent = config.values_subtitle || defaultConfig.values_subtitle;
+            document.getElementById('team-title').textContent = config.team_title || defaultConfig.team_title;
+            document.getElementById('team-subtitle').textContent = config.team_subtitle || defaultConfig.team_subtitle;
+
+            // Apply colors
+            const gradientElements = document.querySelectorAll('.gradient-bg');
+            gradientElements.forEach(el => {
+                el.style.background = `linear-gradient(135deg, ${primaryColor} 0%, ${secondaryColor} 100%)`;
+            });
+
+            const parallaxOverlay = document.querySelector('.parallax-overlay');
+            if (parallaxOverlay) {
+                parallaxOverlay.style.background = `rgba(30, 58, 138, 0.8)`;
+            }
+
+            // Apply fonts
+            document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+            
+            // Apply font sizes
+            document.body.style.fontSize = `${baseSize}px`;
+            document.querySelector('h1').style.fontSize = `${baseSize * 2.5}px`;
+            document.querySelectorAll('h2').forEach(el => el.style.fontSize = `${baseSize * 1.75}px`);
+            document.querySelectorAll('h3').forEach(el => el.style.fontSize = `${baseSize * 1.25}px`);
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.primary_color || defaultConfig.primary_color,
+                        set: (value) => {
+                            config.primary_color = value;
+                            window.elementSdk.setConfig({ primary_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.secondary_color || defaultConfig.secondary_color,
+                        set: (value) => {
+                            config.secondary_color = value;
+                            window.elementSdk.setConfig({ secondary_color: value });
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        config.font_family = value;
+                        window.elementSdk.setConfig({ font_family: value });
+                    }
+                },
+                fontSizeable: {
+                    get: () => config.font_size || defaultConfig.font_size,
+                    set: (value) => {
+                        config.font_size = value;
+                        window.elementSdk.setConfig({ font_size: value });
+                    }
+                }
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["firm_name", config.firm_name || defaultConfig.firm_name],
+                ["about_title", config.about_title || defaultConfig.about_title],
+                ["about_subtitle", config.about_subtitle || defaultConfig.about_subtitle],
+                ["story_title", config.story_title || defaultConfig.story_title],
+                ["story_description", config.story_description || defaultConfig.story_description],
+                ["values_title", config.values_title || defaultConfig.values_title],
+                ["values_subtitle", config.values_subtitle || defaultConfig.values_subtitle],
+                ["team_title", config.team_title || defaultConfig.team_title],
+                ["team_subtitle", config.team_subtitle || defaultConfig.team_subtitle]
+            ]);
+        }
+
+        // Initialize the SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                render,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ </body>
+</html>
